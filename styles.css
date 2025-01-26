@@ -112,6 +112,6 @@ section {
 }
   
 .email-link:hover {
-    text-decoration: underline;
-    /* Optional: Adds underline on hover for clarity */
+    color: inherit;
+    text-decoration: underline; /* Optional: Adds underline on hover for clarity */
 }
