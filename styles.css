@@ -105,3 +105,13 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+.email-link { 
+    color: inherit; /* Inherits the current text color */
+    text-decoration: none; /* Removes the underline */
+}
+  
+.email-link:hover {
+    text-decoration: underline;
+    /* Optional: Adds underline on hover for clarity */
+}
