@@ -1,19 +1,20 @@
-const toggleButton = document.getElementById('theme-toggle');
-const icon = document.getElementById('theme-icon');
+// Theme toggle button handler
+document.addEventListener('DOMContentLoaded', () => {
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
 
-function setTheme(mode) {
-  if (mode === 'dark') {
-    document.body.classList.add('dark-mode');
-  } else {
-    document.body.classList.remove('dark-mode');
+  // Load saved theme from localStorage
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    body.classList.add('light-mode');
   }
-  localStorage.setItem('theme', mode);
-}
 
-const savedTheme = localStorage.getItem('theme') || 'light';
-setTheme(savedTheme);
+  // Toggle theme on click
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
 
-toggleButton.addEventListener('click', () => {
-  const isDark = document.body.classList.contains('dark-mode');
-  setTheme(isDark ? 'light' : 'dark');
+    // Save preference
+    const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
+    localStorage.setItem('theme', currentTheme);
+  });
 });
