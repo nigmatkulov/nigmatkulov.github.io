@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV</title>
+  <title>CV - Grigory Nigmatkulov</title>
   <link rel="stylesheet" href="styles.css" />
+  <script>
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.add('light-theme');
+    }
+  </script>
 </head>
 
 <body>
@@ -19,16 +23,17 @@
     <a href="research.html">Research</a>
     <a href="talks.html">Talks</a>
     <a href="contact.html">Contact</a>
-    <span class="nav-separator">|</span>
-    <button id="theme-toggle" title="Toggle theme">☯</button>
+    <span class="nav-divider">|</span>
+    <span id="theme-toggle" class="theme-icon" title="Toggle theme">☯</span>
   </nav>
 
   <section>
     <h2>About me</h2>
     <p>
-      Experimental physicist specializing in high-energy collisions and next-generation detector technologies. Active participant of the CMS at the LHC, STAR and ePIC at BNL.
-      Passionate about science communication and mentoring early-career scientists. My work bridges fundamental research and real-world impact through innovation in data analysis.
-      A significant portion of my research focuses on applying statistical analysis, programming expertise, and high-precision simulations to study particle detectors and interaction processes.
+      Experimental physicist specializing in high-energy collisions and next-generation detector technologies.
+      Active participant of the CMS at the LHC, STAR and ePIC at BNL. Passionate about science communication and mentoring early-career scientists.
+      My work bridges fundamental research and real-world impact through innovation in data analysis. A significant portion of my research focuses on applying statistical analysis,
+      programming expertise, and high-precision simulations to study particle detectors and interaction processes.
     </p>
 
     <h2>Education</h2>
@@ -58,11 +63,12 @@
         <a href="https://www.bnl.gov/userscenter/merit/competitions/2024/" target="_blank" rel="noopener">
           RHIC & AGS Postdoctoral Fellow Merit Award 2024
         </a>: For exceptional contributions to studies in the STAR experiment of multi-particle correlations, collective flow, flow fluctuations, and vorticity.
-        Also for making significant service contributions to STAR as a working group co-convenor for Correlations and Fluctuations, and as the developer of the STAR PicoDST data model, which is the basis of all modern analyses in STAR.
+        Also for making significant service contributions to STAR as a working group co-convenor for Correlations and Fluctuations, and as the developer of the STAR PicoDST data model,
+        which is the basis of all modern analyses in STAR.
       </li>
-      <li>Gratitude of the General Director of the State Atomic Energy Corporation Rosatom (ROSATOM) for training specialists and scientific research. 2022</li>
-      <li>Distinguished young teaching assistant award. National Research Nuclear University MEPhI. 2012</li>
-      <li>Kirillov-Ugryumov award for the best master thesis research. National Research Nuclear University MEPhI. 2010</li>
+      <li>Gratitude of the General Director of ROSATOM for training specialists and research – 2022</li>
+      <li>Distinguished young teaching assistant award – MEPhI, 2012</li>
+      <li>Kirillov-Ugryumov award for best master thesis research – MEPhI, 2010</li>
     </ul>
   </section>
 
@@ -72,5 +78,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>

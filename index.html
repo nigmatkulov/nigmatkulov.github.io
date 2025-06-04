@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <title>Home - Grigory Nigmatkulov</title>
   <link rel="stylesheet" href="styles.css" />
-  <script defer src="theme-toggle.js"></script>
+  <script>
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.add('light-theme');
+    }
+  </script>
 </head>
 
 <body>
@@ -19,19 +23,27 @@
     <a href="research.html">Research</a>
     <a href="talks.html">Talks</a>
     <a href="contact.html">Contact</a>
-    <span class="nav-separator">|</span>
-    <button id="theme-toggle" title="Toggle theme">
-      <span id="theme-icon">☯</span>
-    </button>
+    <span class="nav-divider">|</span>
+    <span id="theme-toggle" class="theme-icon" title="Toggle theme">☯</span>
   </nav>
 
   <section class="hero">
-    <h2>Welcome to my personal page</h2>
-    <p>Explore my journey through research, talks, and more. Feel free to get in touch!</p>
+    <div class="hero-content">
+      <div class="hero-photo">
+        <!-- Add your photo here -->
+        <div class="photo-placeholder">Your Photo</div>
+      </div>
+      <div class="hero-text">
+        <h2>Welcome to my personal page</h2>
+        <p>Explore my journey through research, talks, and more. Feel free to get in touch!</p>
+      </div>
+    </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Grigory Nigmatkulov</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
