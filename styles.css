@@ -201,3 +201,29 @@ footer {
         padding: 24px 4vw;
     }
 }
+
+/* Yin-Yang Theme Toggle in Nav */
+nav .nav-separator {
+  color: var(--text-secondary);
+  padding: 0 0.5rem;
+  font-weight: bold;
+  user-select: none;
+  display: inline-block;
+  align-self: center;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.15rem;
+  cursor: pointer;
+  color: var(--text-main);
+  transition: color var(--transition);
+  vertical-align: middle;
+}
+
+#theme-toggle:hover,
+#theme-toggle:focus {
+  color: var(--accent);
+  outline: none;
+}
