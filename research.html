@@ -2,32 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research - Grigory Nigmatkulov</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    if (localStorage.getItem('theme') === 'light') {
+      document.documentElement.classList.add('light-theme');
+    }
+  </script>
 </head>
 
 <body>
-    <header>
-        <h1>Research </h1>
-    </header>
+  <header>
+    <h1>Research</h1>
+  </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a href="research.html">Research</a>
-        <a href="talks.html">Talks</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+    <span class="nav-divider">|</span>
+    <span id="theme-toggle" class="theme-icon" title="Toggle theme">☯</span>
+  </nav>
 
-    <section>
-        <p>Relativistic heavy-ion collision studies aim to investigate the properties of quark-gluon plasma (QGP), a state of matter believed to have existed shortly after the Big Bang. Key goals include understanding the behavior of strongly interacting matter at extreme temperatures and densities, exploring the QCD phase diagram, and studying the transition between hadronic matter and QGP.</p>
-    </section>
+  <section>
+    <p>
+      Relativistic heavy-ion collision studies aim to investigate the properties of quark-gluon plasma (QGP), a state of matter believed to have existed shortly after the Big Bang.
+      Key goals include understanding the behavior of strongly interacting matter at extreme temperatures and densities, exploring the QCD phase diagram, and studying the transition between hadronic matter and QGP.
+    </p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Grigory Nigmatkulov</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Grigory Nigmatkulov</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
